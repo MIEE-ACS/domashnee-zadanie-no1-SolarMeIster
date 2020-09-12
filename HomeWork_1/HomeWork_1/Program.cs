@@ -13,6 +13,10 @@ namespace HomeWork_1
             first = second * first; // пятая степень
             second = first * first; // десятая степень
             second = first * second; // пятнадцатая степень
+            if (second % 1 != 0) // если число дробное, то
+            {                    // округляем до 3х знаков после запятой
+                second = Math.Round(second, 3);
+            }
             Console.WriteLine($"Пятнадцатая степень числа {number}: {second}");
         }
     }
